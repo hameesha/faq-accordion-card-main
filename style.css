@@ -23,14 +23,16 @@ body {
   background: linear-gradient(var(--Soft-violet), var(--Soft-blue)) no-repeat;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 80%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 5rem auto;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .row {
@@ -42,14 +44,18 @@ body {
   width: 80%;
   background-color: #fff;
   border-radius: 15px;
+  margin: 0 auto;
 }
 
 .img-container {
-  width: 42%;
+  flex: 1;
   background-image: url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-right: 5em;
 }
 
 .content {
-  width: 57%;
-  padding: 5em;
+  flex: 1;
+  padding: 3em;
 }
