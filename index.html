@@ -27,37 +27,84 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <main class="main row">
-        <div class="img-container">
-          <img src="./images/illustration-woman-online-desktop.svg" class="img__1" alt="" />
-          <img src="./images/illustration-box-desktop.svg" class="img__2" alt="" />
+    <main class="wrapper">
+      <div class="wrapper__img">
+        <div class="wrapper__img-inner">
+          <picture>
+            <source
+              media="(min-width: 700px)"
+              srcset="./images/illustration-woman-online-desktop.svg"
+            />
+            <img src="./images/illustration-woman-online-mobile.svg" />
+          </picture>
         </div>
-        <div class="content">
-          <h1>FAQ</h1>
-          <p>
-            How many team members can I invite? You can invite up to 2 additional
-            users on the Free plan. There is no limit on team members for the
-            Premium plan. What is the maximum file upload size? No more than 2GB.
-            All files in your account must fit your allotted storage space. How do I
-            reset my password? Click “Forgot password” from the login page or
-            “Change password” from your profile page. A reset link will be emailed
-            to you. Can I cancel my subscription? Yes! Send us a message and we’ll
-            process your request no questions asked. Do you provide additional
-            support? Chat and email support is available 24/7. Phone lines are open
-            during normal business hours.
-          </p>
-         
+        <img src="/images/illustration-box-desktop.svg" alt="" class="box" />
+      </div>
+      <div class="wrapper_content">
+        <h1 class="content-title">FAQ</h1>
+        <div class="question_answer">
+          <div class="question_wrapper">
+            <div class="question">
+              <p>How many team members can I invite?</p>
+              <img src="/images/icon-arrow-down.svg" alt="" />
+            </div>
+            <div class="answer">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+          </div>
+          <div class="question_wrapper">
+            <div class="question">
+              <p>What is the maximum file upload size?</p>
+              <img src="/images/icon-arrow-down.svg" alt="" />
+            </div>
+            <div class="answer">
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+          </div>
+          <div class="question_wrapper">
+            <div class="question">
+              <p>How do I reset my password?</p>
+              <img src="/images/icon-arrow-down.svg" alt="" />
+            </div>
+            <div class="answer">
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+          </div>
+          <div class="question_wrapper">
+            <div class="question">
+              <p>Can I cancel my subscription?</p>
+              <img src="/images/icon-arrow-down.svg" alt="" />
+            </div>
+            <div class="answer">
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+          </div>
+          <div class="question_wrapper">
+            <div class="question">
+              <p>Do you provide additional support?</p>
+              <img src="/images/icon-arrow-down.svg" alt="" />
+            </div>
+            <div class="answer">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </div>
         </div>
-        
       </div>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>
