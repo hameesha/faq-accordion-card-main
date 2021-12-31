@@ -57,12 +57,14 @@ img {
   text-align: center;
 }
 
+
 .box {
   display: none;
 }
 
 .content-title {
   text-align: center;
+  font-size: 3rem;
 }
 
 .question_answer {
