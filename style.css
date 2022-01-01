@@ -44,17 +44,18 @@ img {
 }
 
 .wrapper__img {
+  position: relative;
+  height: 120px;
   background-image: url("./images/bg-pattern-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  max-height: 150px;
+  background-repeat: no-repeat; 
+  background-position: top center; 
 }
 
-.wrapper__img-inner {
-  position: relative;
+.wrapper__img-inner img{
+  position: absolute;
   top: -110px;
-  right: 4%;
-  text-align: center;
+  left: 50%;
+  transform: translate(-55%, 0%);
 }
 
 
@@ -91,4 +92,23 @@ img {
 
 .question img {
   align-self: center;
+}
+
+@media screen and (min-width: 700px){
+    .wrapper {
+      display: flex;
+      max-width: 1200px;
+      overflow: hidden;
+    }
+
+    .wrapper__img-inner img{
+      position: relative;
+      top: 90%;
+      left: 50%;
+      transform: translate(-66%, 31%);
+    }
+
+    .question_answer {
+      padding-bottom: unset;
+    }
 }
